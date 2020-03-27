@@ -23,6 +23,8 @@ function CheckHelmRelease(){
     fi
 }
 
+# =============================================================================
+
 function CheckNamespace(){
     if [ ${1} -eq 1 ] 
     then
@@ -42,24 +44,26 @@ function CheckNamespace(){
     fi
 }
 
+# =============================================================================
+
 function GetHelmReleases() {
     echo -e "\nChecking if the helm release ${HELM_NAME} alredy exist in helm releases..."
     HELM_RELEASES=$(helm list --all --all-namespaces | awk '{print $1}')
     for HELM_RELEASE in ${HELM_RELEASES}
     do
-        if [ ${HELM_RELEASE} != ${HELM_NAME} ] ; then continue ; fi
-        EXIST=1
+        if [ ${HELM_RELEASE} != ${HELM_NAME} ]; then continue; else EXIST=1;  fi
     done
     CheckHelmRelease ${EXIST}
 }
+
+# =============================================================================
 
 function GetNamespaces() {
     echo -e "\nChecking if ${HELM_NAMESPACE} alredy exist in ${BOTKUBE_CLUSTER_NAME} Cluster..."
     NAMESPACES=$(kubectl get ns | awk '{print $1}')
     for NAMESPACE in ${NAMESPACES}
     do
-        if [ ${NAMESPACE} != ${HELM_NAMESPACE} ] ; then continue ; fi
-        EXIST=1
+        if [ ${NAMESPACE} != ${HELM_NAMESPACE} ]; then continue; else EXIST=1; fi
     done
     CheckNamespace ${EXIST}
 }

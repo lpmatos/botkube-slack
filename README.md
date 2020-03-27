@@ -35,9 +35,14 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 :---:
 **Helm**
 **Kubectl**
+**Shell Script**
 
 - Kubernetes 1.14 or higher is recommended.
 - For Kubernetes < 1.14, BotKube won’t be able to monitor Ingress resources.
+
+## Description
+
+To run this automation (Botkube + Slack) you can be configure all your credentials in the .env file and run the container using the docker-compose.
 
 ## Architecture
 
@@ -102,9 +107,31 @@ winpty docker.exe container run -it --rm <IMAGE_NAME> <COMMAND>
 
 For more information, access the [Docker](https://docs.docker.com/)
 
+## Development with Docker Compose
+
+Steps to run this integration with docker-compose.
+
+```bash
+docker-compose up --build
+```
+
+Steps to down all services deployed by docker-compose.
+
+```bash
+docker-compose down
+```
+
+## Kubectl
+
+Kubectl is a command line tool for controlling Kubernetes clusters. kubectl looks for a file named config in the $HOME/.kube directory.
+
+For more information, access the [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/). In this [Project](/docs/annotations/kubectl.md) we have a list of usually commands used to get some informations about the Cluster and your resources with kubectl.
+
 ## Built with
 
 - [Helm](https://helm.sh/)
+- [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+- [Shell Script](https://devdocs.io/bash/)
 - [Docker](https://docs.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
 
@@ -170,4 +197,4 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ## Project Status
 
-* 🔛 In production
+* ✔️ In production

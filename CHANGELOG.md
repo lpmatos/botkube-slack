@@ -20,4 +20,15 @@ All important changes to this project will be added to this file! This changelog
     * Get all Helm Releases.
     * Get all Namespaces.
     * If conditional to create a namespace if not exist.
-    
+
+## 1.0.0
+
+### Added
+
+* Menu selection in README.
+* Kubectl commands description in docs.
+
+### Changed
+
+* Docker-compose botkube name to botkube-slack.
+* If conditional to get namespaces and helm releases - one line.
