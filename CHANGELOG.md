@@ -27,6 +27,8 @@ All important changes to this project will be added to this file! This changelog
 
 * Menu selection in README.
 * Kubectl commands description in docs.
+* Github workflow to Docker image build and push to the registry.
+* Some commets in REAMDE.
 
 ### Changed
 
