@@ -1,6 +1,6 @@
 BotKube with Slack
 ============
-
+Please Read Full Readme This is Awesome
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/lpmatos/botkube-slack) [![Contributors](https://img.shields.io/github/contributors/lpmatos/botkube-slack)](https://github.com/lpmatos/botkube-slack/graphs/contributors) [![MIT License](https://img.shields.io/github/license/lpmatos/botkube-slack)](https://github.com/lpmatos/botkube-slack/blob/master/LICENSE) [![GitHub fork](https://img.shields.io/github/forks/lpmatos/botkube-slack?style=social)](https://github.com/lpmatos/botkube-slack/network/members) [![GitHub stars](https://img.shields.io/github/stars/lpmatos/botkube-slack?style=social)](https://github.com/lpmatos/botkube-slack/stargazers) [![GitHub watchers](https://img.shields.io/github/watchers/lpmatos/botkube-slack?style=social)](https://github.com/lpmatos/botkube-slack/watchers)
 
 <p align="center">
@@ -11,11 +11,11 @@ BotKube with Slack
   <strong>Basic project used in your process to creat a Slack Integration with BotKube in your Cluster</strong>
 </p>
 
-## Copyright (c)
+## Copyright (c) --
 
 Lucca Pessoa da Silva Matos (c) 2020 - **GitHub Repository**
 
-## Getting Started
+## Getting Started --
 
 To use this repository you need to make a **git clone**:
 
@@ -29,7 +29,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 
 <a href="https://www.buymeacoffee.com/EatdMck" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 100px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
-## Pre-Requisites
+## Pre-Requisites --
 
 **Tools**
 :---:
@@ -40,15 +40,15 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 - Kubernetes 1.14 or higher is recommended.
 - For Kubernetes < 1.14, BotKube won’t be able to monitor Ingress resources.
 
-## Description
+## Description --
 
 To run this automation (Botkube + Slack) you can be configure all your credentials in the .env file and run the container using the docker-compose.
 
-## Architecture
+## Architecture --
 
 ![Alt text](docs/images/BOTKUBE-ARQUITETURA.jpg?raw=true "BotKube Architecture")
 
-## Containers
+## Containers --
 
 It's set at [docker-compose.yml](docker-compose.yml) the **Containers** required for application execution.
 
@@ -56,11 +56,11 @@ It's set at [docker-compose.yml](docker-compose.yml) the **Containers** required
 :---: | :---: | :---:
 botkube-slack | **Alpine Container with Helm and Kubectl to run BotKube configuration with Slack** | [Dockerfile](app/Dockerfile)
 
-## Usage
+## Usage --
 
 ![BotKube Usage](docs/gifs/BOTKUBE-USAGE.gif)
 
-## Environment variables
+## Environment variables --
 
 **Name**  |  **Description**
 :---:  |  :---:
@@ -77,18 +77,18 @@ botkube-slack | **Alpine Container with Helm and Kubectl to run BotKube configur
 **BOTKUBE_IMAGE_TAG**  |  Helm Chart BotKube Tag
 **CREATE_NAMESPACE**  | If YES the script create a namespace in the Cluster
 
-## Development with Docker
+## Development with Docker --
 
 Steps to build the Docker image.
 
-### Build
+### Build --
 
 ```bash
 docker image build -t <IMAGE_NAME> -f <PATH_DOCKERFILE> <PATH_CONTEXT_DOCKERFILE>
 docker image build -t <IMAGE_NAME> . (This context)
 ```
 
-### Run
+### Run --
 
 Steps to run the container.
 
@@ -121,13 +121,13 @@ Steps to down all services deployed by docker-compose.
 docker-compose down
 ```
 
-## Kubectl
+## Kubectl --
 
 Kubectl is a command line tool for controlling Kubernetes clusters. kubectl looks for a file named config in the $HOME/.kube directory.
 
 For more information, access the [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/). In this [Project](/docs/annotations/kubectl.md) we have a list of usually commands used to get some informations about the Cluster and your resources with kubectl.
 
-## Built with
+## Built with --
 
 - [Helm](https://helm.sh/)
 - [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
@@ -135,7 +135,7 @@ For more information, access the [Kubectl](https://kubernetes.io/docs/tasks/tool
 - [Docker](https://docs.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
 
-## How to contribute
+## How to contribute --
 
 1. Make a **Fork**.
 
@@ -151,7 +151,7 @@ For more information, access the [Kubectl](https://kubernetes.io/docs/tasks/tool
 
 Remember: There is no bad code, there are different views/versions of solving the same problem. 😊
 
-## Add to git and push
+## Add to git and push --
 
 You must send the project to your GitHub after the modifications
 
@@ -161,7 +161,7 @@ git commit -m "Added - Fixing somethings"
 git push origin master
 ```
 
-## Contacts
+## Contacts --
 
 Hey!! If you like this project or if you find some bugs feel free to contact me in my channels:
 
@@ -171,15 +171,15 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 [![Facebook](https://github.frapsoft.com/social/facebook.png)](https://www.facebook.com/lucca.pessoa.9)
 [![Github](https://github.frapsoft.com/social/github.png)](https://github.com/lpmatos)
 
-## Versioning
+## Versioning --
 
 - [CHANGELOG](CHANGELOG.md)
 
-## License
+## License --
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
-## Contributors ✨
+## Contributors ✨ --
 
 <table>
   <tr>
@@ -187,7 +187,7 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
   <tr>
 </table>
 
-## Autor
+## Autor --
 
 <table>
   <tr>
@@ -195,6 +195,6 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
   <tr>
 </table>
 
-## Project Status
+## Project Status --
 
 * ✔️ In production
